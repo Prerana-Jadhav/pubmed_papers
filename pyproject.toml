@@ -1,0 +1,18 @@
+[project]
+name = "pubmed-papers"
+version = "1"
+description = "Clearly indicates the PubMed integration"
+authors = [
+    {name = "Prerana"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "click (>=8.2.1,<9.0.0)",
+    "requests (>=2.32.4,<3.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

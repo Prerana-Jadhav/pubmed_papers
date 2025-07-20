@@ -1,37 +1,36 @@
-# PubMed Papers Fetcher
-A Python-based command-line tool to search PubMed for research papers matching a user-defined query, and filter those that have at least one non-academic author affiliated with pharmaceutical or biotech companies.
+# 📄 get-papers-list
 
-# Key Features
-Search PubMed using full query syntax support.
+A Python command-line tool and library to fetch PubMed research papers based on a user-provided query, identifying papers with at least one author affiliated with pharmaceutical or biotech companies. Results can be saved as a CSV file or printed to the console.
 
-Identify non-academic authors using custom heuristics.
+---
 
-Extract corresponding author email addresses.
+## 📌 Features
 
-Output results to the console or CSV file.
+- Query PubMed using its full query syntax
+- Filter papers to find **non-academic authors** using email domain and affiliation heuristics
+- Extract details:
+  - PubMed ID
+  - Title
+  - Publication Date
+  - Non-academic Authors
+  - Company Affiliations
+  - Corresponding Author Email
+- Output results to a CSV file or the console
+- Command-line options for debug mode, output filename, and help
+- Fully typed Python code
+- Poetry for dependency management
+- Modular codebase (library + CLI)
+- Published to **Test PyPI**
 
-Modular code structure with a typed Python core module and a separate CLI.
+---
 
-Configurable via command-line options like --debug and --file.
+## 📁 Code Organization
+## 🛠️ Installation
 
-# Tech Stack
-Python 3
+### Prerequisites
+- Python 3.8+
+- Poetry
 
-Poetry for packaging and dependency management
-
-Click for CLI
-
-Requests for HTTP API calls
-
-# Bonus
-Modularized for reuse
-
-Compatible with TestPyPI publishing
-
-Supports extension via additional heuristics for affiliation detection.
-
-# Usage Example
-bash
-Copy
-Edit
-poetry run get-papers-list "cancer immunotherapy" --debug --file results.csv
+### Install dependencies
+```bash
+poetry install
